@@ -1,0 +1,27 @@
+.menu {
+    height: 75%;
+    background-color: var(--content-bg);
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+
+  .menu-items {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu-item {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    background-color: teal;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    height: 80px;
+    flex-direction: column;
+  }

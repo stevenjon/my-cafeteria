@@ -1,38 +1,94 @@
-.App {
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); */
+:root {
+  --main-color: tomato;
+  --content-bg: papayawhip;
+  --danger: rgb(255, 99, 99);
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/736x/8f/9f/78/8f9f788ca02a482fb9f57bb0ce9b4f64.jpg");
+  background-size: cover;
+  background-position: center;
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-area {
+  max-width: 375px;
+  height: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-bar {
+  height: 25%;
+  /* padding-top: 3vh; */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ 
+/* Components -> back-btn */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.back-btn {
+  position: absolute;
+  top: 5px;
   display: flex;
-  flex-direction: column;
+  font-weight: 500;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-input {
+  border-radius: 10px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+/* .ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+} */
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Ripple effect */
+.ripple-list {
+  cursor: pointer;
+  background-position: center;
+  transition: background 0.8s;
+}
+/* .ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+} */
+.ripple-list:active {
+  background-color: wheat;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.list-actions {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.ant-select {
+  display: block !important;
+}
+
+.ant-select-selector {
+  border-radius: 10px !important;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  width: 64px !important;
+  height: 64px !important;
 }
